@@ -1,3 +1,13 @@
 <!-- exibe o valor da variavel do type script -->
 <!-- testa o JS -->
 <h1>{{title}}</h1>
+<!-- name="numberOne" id="numberOne" e usado por padronizacao, mais o que inporta e o [(ngModel)] -->
+<!-- [(ngModel)]="numberOne" pega o valor da vairiavel numberOne e seta no input -->
+<!-- [(ngModel)]="numberTwo" pegar o valor da variavek numberTwo e seta no input-->
+<input type="number" class="form-control" name="numberOne" id="numberOne" [(ngModel)]="numberOne"/>
+<input type="number" class="form-control" name="numberTwo" id="numberTwo" [(ngModel)]="numberTwo"/>
+
+<!-- <button (click)="calcular()">Calcular</button> -->
+<button type="button" class="btn btn-primary" (click)="calcular()">Calcular</button>
+<h1>{{soma}}</h1>
+<h3>{{text}}</h3>
